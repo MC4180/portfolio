@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Michael Chang's Portfolio</title>
+    </head>
+    <body>
+        <a id="top"></a>
+        <header class="header">
+            <div class="header_logoname">
+                <div class="header_logodiv"><img src="images/logo.png" class="header_logo"> <!--Image squishes verticaly when viewport gets really small--></div>
+                <p class="center" style="letter-spacing: 0.5vw; margin-left: 1vw;"><a href="homepage.html">Michael Chang</a></p>
+            </div>
+            <nav class="row_flex"> <!--concerns with it wrapping too soon on mobile-->
+                <ul class="center"><!-- <a href="#">Demonstration Antenna</a> --></ul>
+                <ul class="center"><a href="testjigs.html">Test Jigs</a></ul>
+                <!-- <ul class="center"><a href="#">Carbon Fiber</a></ul> -->
+                <ul class="center"><a href="FSAEAeroPackage.html">FSAE Aero Package</a></ul>
+                <ul class="center"><a href="contactme.html">Contact Me</a></ul>
+            </nav>
+        </header>
+        <section class="herobanner">
+            <div class="heroimagediv"><img src="images/Heads24_Chang.jpg" alt="" class="heroimage"></div>
+            <h1 style="margin-bottom: 1vh; font-size: 4em;">Hi, I'm <span style="text-decoration: underline; text-decoration-color: var(--accent-color); ">Michael Chang</span>!</h1>
+                <p class="herosubtitle center">I'm a third year undergraduate mechanical engineering major at Northeastern University with a specialization in <b>fluid and structural simulations, composite design/fabrication, and rapid prototyping</b>. My interest in engineering has spanned nearly the past decade of my life, encapsulating my first flight lesson at thirteen years of age, to serving as the head structural engineer for Northeastern Electric Racing. What started out as a love for flying turned into a passion for <b>high-performance applications</b>, particularly those involving aerodynamics.</p>
+                <p class="herosubtitle center">I've had experience designing and manufacturing suspension uprights, bodywork, and an aerodynamics package for an electric race car, metamaterial testing jigs with a commercial stud sensor, a control system with three different modes for a demonstration antenna, and more.</p>
+                <p class="herosubtitle center">Keep scrolling to see a summary of my skills, or click around to check out a few of my projects!</p>
+        </section>
+        <section class="skills">
+            <h1>Skills</h1>
+            <div class="row_flex">
+                <div class="col_flex">
+                    <h2>Composite Design and Manufacturing</h2>
+                    <p class="blurb">I'm well versed with designing and manufacturing budget composite parts that still achieve Class-A finishes straight out of the mold. At Northeastern Electric Racing, I developed the team's composites workflow, combining woodworking and bookbinding principles with composites technology to create strong yet lightweight bodywork and wings. I've also used ANSYS ACP to model complex composite systems for FEA using pressure mapping from ANSYS Fluent. Overall, my contributions have allowed Northeastern Electric Racing to design and analyze lighter, stronger parts. </p>
+                </div>
+                <img src="images/carobnfiberpanel.jpg" alt="" style="width: 30%; height: auto;">
+            </div>
+            <div class="row_flex">
+                <div class="col_flex">
+                    <h2>Computational Fluid Dynamics (CFD)</h2>
+                    <p class="blurb">Over the past two years, I've worked hard on developing a CFD workflow in ANSYS to quantitatively and qualitatively evaluate Northeastern Electric Racing's aerodynamics package. I developed an automated 2D geometry workflow and more efficient workflows to create domain geometry and meshes. I use the k-omega turbulence model to study the general flow field of the car, and k-epsilon to study ground effect interactions of the floor and front wing. Working in collaboration with the vehicle dynamics team, I am developing a cornering simulation to evaluate aerodynamic performance in turns. </p>
+                </div>
+                <img src="images/24A_FinalAeroPressureLICSweep.gif" alt="" style="width: 30%; height: auto;">
+            </div>
+            <div class="row_flex">
+                <div class="col_flex">
+                    <h2>Finite Element Analysis (FEA)</h2>
+                    <p class="blurb">I've performed FEA—both in Solidworks and ANSYS—on suspension uprights, swan necks, carbon fiber airfoils, and an FSAE chassis. I'm able to run mesh studies to produce consistent, accurate simulations across both anisotropic composites and isotropic materials, including combined simulations such as airfoil structures. Additionally, I've built multiple calculators to define force magnitudes and vectors, and taught underclassmen general practices on proper fixturing and boundary conditions. </p>
+                </div>
+                <img src="images/fw_mountplateFEA.png" alt="" style="width: 30%; height: auto;">
+            </div>
+        </section>
+    </body>

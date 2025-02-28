@@ -1,0 +1,224 @@
+html{
+    height:100%;
+    *{cursor: url("images/cursor.png") 10 7, auto;}
+    --accent-color:rgb(86, 126, 164);
+    background: linear-gradient(rgb(27, 46, 71), rgb(20, 21, 22));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body{
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.075vw;
+    width:85%;
+    margin: auto;
+    background: none;
+    padding-bottom: 10vh;
+}
+
+
+button{
+    width: 5vh;
+    height: auto;
+    background:none;
+    border:none;
+    margin: 2vh 3vw 3vh;
+    border-radius: 25%;
+    align-items: center;
+
+    -webkit-transition: background 200ms ease-out;
+    -moz-transition: background 200ms ease-out;
+    -o-transition: background 200ms ease-out;
+    -ms-transition: background 200ms ease-out;
+    transition: background 200ms ease-out;
+}
+
+button:hover{
+    background: var(--accent-color);
+}
+
+.buttonimage{
+    width: 100%;
+    height: auto;
+    vertical-align: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 2vh 1vw 5vh 1vw;
+    font-weight: lighter;
+    height: 10vh;
+}
+
+.header_logoname{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+
+.header_logodiv{
+    max-width:10%;
+    height: auto;
+    float:left;
+    margin-right: 1vw;
+    object-fit: contain;
+    align-content: center;
+}
+
+.header_logo{
+    max-width:100%;
+    height: auto;
+    border-radius: 100%;
+    transform-origin: center;
+}
+
+.row_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-right:0;
+    align-content: center;
+    vertical-align: center;
+    width: 50%;
+}
+
+.col_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-right:0;
+    align-content: center;
+    vertical-align: center;
+    margin-bottom: 10vw;
+}
+
+.center{
+    align-content: center;
+    vertical-align: center;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    -webkit-transition: color 200ms ease-out;
+    -moz-transition: color 200ms ease-out;
+    -o-transition: color 200ms ease-out;
+    -ms-transition: color 200ms ease-out;
+    transition: color 200ms ease-out;
+}
+
+a:hover{
+    color: var(--accent-color);
+}
+
+.herobanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    font-weight: lighter;
+    width: 50vw;
+    margin: auto;
+    margin-bottom:15vh;
+}
+
+.article{
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.heroimagediv{
+    max-width: 25vh;
+    max-height: auto;
+    border-radius: 100%;
+    transform-origin: center;
+    margin: 1vh 0 0 1vh;
+}
+
+.heroimage{
+    max-width:100%;
+    height: auto;
+    border-radius: 100%;
+    transform-origin: center;
+}
+
+h1{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2{
+    color: var(--accent-color);
+    margin-bottom: 0vh;
+    font-size: 2em;
+}
+
+p{
+    text-align: left;
+    line-height: 1.25;
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+p.herosubtitle{
+    font-size: 1em;
+    line-height: 1.5;
+    width: 100%;
+}
+
+p.blurb{
+    width: 50vw;
+    text-align: start;
+}
+
+img{
+    display:inline-block;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 5px;
+}
+
+.preview-title-list{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+.preview-tile{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.preview-tile-cell{
+    width: 40%;
+    text-align: right;
+    align-content: center;
+    vertical-align: center;
+    margin: 1vh 0vw;
+}
+
+.preview-tile-entity{
+    width: 100%;
+    border-radius: 10%;
+    font-size: 1vw;
+}
+
+p.preview-tile-entity{
+    font-weight: lighter;
+}

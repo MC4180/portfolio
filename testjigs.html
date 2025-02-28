@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Michael Chang's Portfolio | FSAE Aerodynamics Package</title>
+    </head>
+    <body>
+        <a id="top"></a>
+        <header class="header">
+            <div class="header_logoname">
+                <div class="header_logodiv"><img src="images/logo.png" class="header_logo"> <!--Image squishes verticaly when viewport gets really small--></div>
+                <p class="center" style="letter-spacing: 0.5vw; margin-left: 1vw;"><a href="homepage.html">Michael Chang</a></p>
+            </div>
+            <nav class="row_flex"> <!--concerns with it wrapping too soon on mobile-->
+                <ul class="center"><!-- <a href="#">Demonstration Antenna</a> --></ul>
+                <ul class="center"><a href="testjigs.html">Test Jigs</a></ul>
+                <!-- <ul class="center"><a href="#">Carbon Fiber</a></ul> -->
+                <ul class="center"><a href="FSAEAeroPackage.html">FSAE Aero Package</a></ul>
+                <ul class="center"><a href="contactme.html">Contact Me</a></ul>
+            </nav>
+        </header>
+        <h1 style="margin-bottom: 5vh;">Metamaterial Test Jigs</h1>
+        <img src="images/s-jig.jpg" alt="" style="width: auto; height: 50vh;">
+        <section class="article">
+            <p>The jig pictured above is the last (and arguably the largest) jig I created during my co-op at Notch Inc. The antennas used took up too much space when used on tripods, so we wanted to store it vertically. That being said, I still wanted to keep it modular and adjustable, so I used T-slot aluminum extrusions to build a frame and mount for the antennas and metamaterial.</p>
+            <p>That said, I've also created other jigs for more scientific purposes- the wally jig and protractor jig (pictured below) were used to measure absorption about azimuth and elevation. The wally jig used a commercial Walabot stud finding sensor I reprogrammed to measure power returns against a baseline sheet of reflective foil. I designed it to have modular features and quick mounts that allowed for fast and easy switching for profiling a series of materials. The protractor jig used purpose-built horn antennas with custom lenses to measure the RF profiles. This jig was an upgrade to allow combined azimuth and elevation angles. The plywood baseplate was lasercut, and the holder is 3D printed out of PLA. The holder features a custom gimbal-like system to rotate about azimuth and elevation.</p>
+            <div class="row_flex">
+                <img src="images/wally.jpg" alt="">
+                <img src="images/ProtractorHolder.png" alt="">
+            </div>
+            <p>I spent the most time working with the wally jig. I wrote a jupyter notebook that allowed me to see a real-time graph of distance vs. power returns, automatically collected data and plotted it against a baseline and other materials, and then converted the data to polar plots and saved all of it. With this I could test as many materials as I wanted simultaneously, compare them, and then send the report to my managers without having to get out of my chair.</p>
+        </section>
+        
+    </body>
