@@ -8,7 +8,19 @@
     </head>
     <body>
         <a id="top"></a>
-        <div id="header-placeholder"></div>
+        <header class="header">
+        <div class="header_logoname">
+            <div class="header_logodiv"><img src="images/logo.png" class="header_logo"> <!--Image squishes verticaly when viewport gets really small--></div>
+            <p class="center" style="letter-spacing: 0.5vw; margin-left: 1vw;"><a href="index.html">Michael Chang</a></p>
+        </div>
+        <nav class="row_flex"> <!--concerns with it wrapping too soon on mobile-->
+            <ul class="center"><!-- <a href="#">Demonstration Antenna</a> --></ul>
+            <ul class="center"><a href="testjigs.html">Test Jigs</a></ul>
+            <!-- <ul class="center"><a href="#">Carbon Fiber</a></ul> -->
+            <ul class="center"><a href="FSAEAeroPackage.html">FSAE Aero Package</a></ul>
+            <ul class="center"><a href="FSAEUndertray.html">FSAE Undertray</a></ul>
+            <ul class="center"><a href="contactme.html">Contact Me</a></ul>
+        </nav>
         <h1 style="margin-bottom: 5vh;">Metamaterial Test Jigs</h1>
         <img src="images/s-jig.jpg" alt="" style="width: auto; height: 50vh;">
         <section class="article">
@@ -22,12 +34,3 @@
         </section>
         
     </body>
-
-<script>
-    fetch('/header.html')
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading header:', error));
-</script>
