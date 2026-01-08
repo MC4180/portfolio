@@ -8,8 +8,20 @@
     </head>
     <body>
         <a id="top"></a>
-        <div id="header-placeholder"></div>
-        <script src="load-header.js"></script>
+        <header class="header">
+            <div class="header_logoname">
+                <div class="header_logodiv"><img src="images/logo.png" class="header_logo"> <!--Image squishes verticaly when viewport gets really small--></div>
+                <p class="center" style="letter-spacing: 0.5vw; margin-left: 1vw;"><a href="index.html">Michael Chang</a></p>
+            </div>
+            <nav class="row_flex"> <!--concerns with it wrapping too soon on mobile-->
+                <ul class="center"><!-- <a href="#">Demonstration Antenna</a> --></ul>
+                <ul class="center"><a href="testjigs.html">Test Jigs</a></ul>
+                <!-- <ul class="center"><a href="#">Carbon Fiber</a></ul> -->
+                <ul class="center"><a href="FSAEAeroPackage.html">FSAE Aero Package</a></ul>
+                <ul class="center"><a href="FSAEUndertray.html">FSAE Undertray</a></ul>
+                <ul class="center"><a href="contactme.html">Contact Me</a></ul>
+            </nav>
+        </header>
         <h1 style="margin-bottom: 5vh;">Contact me</h1>
         <section class="article">
             <p class="center">Hi! If you want to reach out to talk about any of my projects, please feel free to do so at by LinkedIn or email, linked below.</p>
@@ -18,8 +30,5 @@
                 <a href="https://www.linkedin.com/in/michael-chang-a0ba62204/"><button><img src="images/icons/linkedin.svg" alt=""></button></a>
                 <a href="mailto:chang.mic@northeastern.edu"><button><img src="images/icons/mail.svg" alt=""></button></a>
             </div>
-
-            
         </section>
-        
     </body>
