@@ -1,7 +1,7 @@
 html{
     height:100%;
     *{cursor: url("images/cursor.png") 10 7, auto;}
-    --accent-color:rgb(86, 126, 164);
+    --accent-color:rgb(66, 133, 196);
     background: linear-gradient(rgb(27, 46, 71), rgb(20, 21, 22));
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -84,6 +84,9 @@ button:hover{
     justify-content: start;
     align-items: center;
     margin-right:0;
+    margin-bottom:0;
+    margin-top:0;
+    margin-top:0;
     align-content: center;
     vertical-align: center;
     width: 50%;
@@ -93,10 +96,10 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-right:0;
+    margin-right:5vw;
+    margin-bottom: 5vh;
     align-content: center;
     vertical-align: center;
-    margin-bottom: 10vw;
 }
 
 .center{
@@ -160,9 +163,12 @@ h1{
 
 h2{
     color: white;
+    font-weight:lighter;
     margin-bottom: 0vh;
     padding-bottom: 0vh;
-    font-size: 2em;
+    font-size: 1.5em;
+    text-decoration: underline; 
+    text-decoration-color: var(--accent-color);
 }
 
 p{
@@ -181,6 +187,7 @@ p.herosubtitle{
 p.blurb{
     width: 50vw;
     text-align: start;
+    margin-bottom:0;
 }
 
 img{
