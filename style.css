@@ -15,7 +15,7 @@ body{
     color: white;
     font-size: 1.5em;
     letter-spacing: 0.075vw;
-    width:85%;
+    width:75%;
     margin: auto;
     background: none;
     padding-bottom: 10vh;
@@ -92,7 +92,6 @@ button:hover{
     margin-top:0;
     align-content: center;
     vertical-align: center;
-    width: 75%;
 }
 
 .col_flex{
@@ -131,13 +130,13 @@ a:hover{
     align-items: center;
     font-size: x-large;
     font-weight: lighter;
-    width: 75vw;
+    width: 75%;
     margin: auto;
     margin-bottom:15vh;
 }
 
 .article{
-    width: 75vw;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -188,7 +187,7 @@ p.herosubtitle{
 }
 
 p.blurb{
-    width: 50vw;
+    width: 35vw;
     text-align: start;
     margin-bottom:0;
 }
