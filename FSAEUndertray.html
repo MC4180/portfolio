@@ -10,13 +10,28 @@
         <a id="top"></a>
         <div id="header-placeholder"></div>
         <script src="load-header.js"></script>
-        <h1 style="margin-bottom: 5vh;">Developing an FSAE undertray</h1>
-        <div class="row_flex">
+        <h1 style="margin-bottom: 5vh;">Developing an FSAE Undertray</h1>
+        <div class="row_flex" style="margin: 0 auto;">
                 <img src="images/25A_Preview.png" alt="" style="width: 25vw; height: auto;">
                 <img src="images/25A_Preview2.png" alt="" style="width: 25vw; height: auto;">
             </div>
         <section class="article">
-            <p>Project currently in development. </p>
+            <p>Following the success of the <a href="FSAEAeroPackage.html" style="color:rgb(137, 186, 226)">first aero package</a>, development of an undertray was planned for the next car. Most simple undertrays consist of a raised nosecone, a flat floor section, and a diffuser. The resulting converging/diverging section efficiently creates low pressure under the car.</p>
+            <p>Because of the inherent 3D flow structures of an undertray, 2D geometry optimization was not possible. Therefore, I implemented parameterization for the vehicle CAD allowing for changes in state (i.e. cornering, braking, etc.) as well as undertray dimensions. I also further automated geometry cleanup, meshing, and solving processes to handle surface fixes, body grouping, meshing and local mesh refinements, boundary condition setups, and solver initialization/solve.</p>
+            <p>Almost immediately, issues with floor sealing became apparent, especially in cornering conditions:</p>
+            <div class="row_flex">
+                <img src="images/diffuser_cornering_sep.png" alt="" style="height: 25vw; width: auto;">
+                <img src="images/undertray_badsurfacecontour.jpg" alt="" style="height: 25vw; width: auto;">
+            </div>
+            <p>I determined that the issues were stemming from inwash disrupting the diffuser sidewall vortex that keeps flow through the diffuser attached. The resulting flow blockage reduced the efficiency and killed mass flow through the undertray.</p>
+            <p>I tried multiple solutions to solve this issue by managing a sealing vortex- revising side tunnel geometry, implementing floor strakes, etc. Eventually, I developed a tunnel geometry that stabilized and guided a vortex along the length of the floor, providing better sealing. This resulted in better suction on the floor and better pressure recovery in the diffuser.</p>
+            <p>Geometry was optimized, but not to the maximum in order to ensure stable, predictable performance and a wider operational envelope across acceleration, braking, and cornering. Elements that were optimized to the max tended to stall abruptly once out of the narrow operational envelope, and the CFD results for the undertray could not be verified until the part was manufactured and being tested on the car.</p>
+            <div class="row_flex">
+                <img src="images/diffuser_cornering_final.png" alt="" style="width: 30vw; height: auto;">
+                <img src="images/undertray_goodsurfacecontour.png" alt="" style="width: 30vw; height: auto;">
+            </div>
+            <p>Further testing showed that for both the diffuser and tunnel outlets, the recommended expansion ratio of 5 was unecessary. I shortened the expansion regions according to the desired pressure recovery characteristics.</p>
+            <p>This project is still in progress- more updates to come!</p>
         </section>
         
     </body>
