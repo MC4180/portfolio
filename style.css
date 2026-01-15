@@ -14,6 +14,7 @@ body{
     font-family: "Calibri", Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1.5em;
+    font-weight: lighter;
     letter-spacing: 0.075vw;
     width:75%;
     margin: auto;
@@ -176,7 +177,6 @@ h2{
 p{
     text-align: left;
     line-height: 1.25;
-    font-weight: lighter;
     font-size: 1em;
 }
 
