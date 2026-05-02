@@ -232,3 +232,11 @@ img{
 p.preview-tile-entity{
     font-weight: lighter;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;     /* Vertical centering (requires a container height) */
+  padding: 5px;
+  margin: 1vh;
+}

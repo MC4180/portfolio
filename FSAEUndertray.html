@@ -11,12 +11,9 @@
         <div id="header-placeholder"></div>
         <script src="load-header.js"></script>
         <h1 style="margin-bottom: 5vh;">Developing an FSAE Undertray</h1>
-        <div class="row_flex" style="margin: 0 auto;">
-                <img src="images/25A_Preview.png" alt="" style="width: 25vw; height: auto;">
-                <img src="images/25A_Preview2.png" alt="" style="width: 25vw; height: auto;">
-            </div>
+        <img src="images/25A_UnderbodyCADOverview.jpg" style="width:40vw; height:auto;">
         <section class="article">
-            <p>Following the success of the <a href="FSAEAeroPackage.html" style="color:rgb(137, 186, 226)">first aero package</a>, development of an undertray was planned for the next car. Most simple undertrays consist of a raised nosecone, a flat floor section, and a diffuser. The resulting converging/diverging section efficiently creates low pressure under the car.</p>
+            <p>Following the success of the <a href="FSAEAeroPackage.html" style="color:rgb(137, 186, 226)">first aero package</a>, development of an undertray was planned for the next car after further aerodynamic gains were identified in that area. Most simple undertrays consist of a raised nosecone, a flat floor section, and a diffuser. The resulting converging/diverging section efficiently creates low pressure under the car.</p>
             <p>Because of the inherent 3D flow structures of an undertray, 2D geometry optimization was not possible. Therefore, I implemented parameterization for the vehicle CAD allowing for changes in state (i.e. cornering, braking, etc.) as well as undertray dimensions. I also further automated geometry cleanup, meshing, and solving processes to handle surface fixes, body grouping, meshing and local mesh refinements, boundary condition setups, and solver initialization/solve.</p>
             <p>Almost immediately, issues with floor sealing became apparent, especially in cornering conditions:</p>
             <div class="row_flex">
@@ -31,7 +28,20 @@
                 <img src="images/undertray_goodsurfacecontour.png" alt="" style="width: 30vw; height: auto;">
             </div>
             <p>Further testing showed that for both the diffuser and tunnel outlets, the recommended expansion ratio of 5 was unecessary. I shortened the expansion regions according to the desired pressure recovery characteristics.</p>
-            <p>This project is still in progress- more updates to come!</p>
+             <p>Structurally the side floors and main floor were designed for torsional and bending stiffness, easy installation and removal time to get access to the accumulator. To achieve the desired stiffness, a ply stackup was developed using carbon fiber, kevlar, and lantor soric core for stiffness and abrasion resistance. A combination of plies and orientations were tested using ANSYS ACP to model the anisotropic nature of the system in FEA. Additionally, 3 point bending and tensile tests were performed on sample layups on Instron machines to correlate basic models to real-world performance. </p>
+            <p>Fabrication of the parts used resin infusion layups with MDF molds- MDF because it was what the team could afford. Individual sheets of MDF were routed and then assembled together, the seams filled in with filling putty and sanded, and then the entire mold surface sprayed with mold primer and then sanded to 1000 grit. This provided a sealed, high-quality mold surface that left a semi-matte finish on the part (this could then be given a high-gloss look with 2K automotive clearcoat that added minimal weight).</p>
+            <div class="video-container">
+                <video autoplay controls loop style="width:30vw; height:auto;">
+                    <source src="images/25A_MainFloorInfusion.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="row_flex">
+                <img src="images/25A_SideFloorDiagram.jpg" alt="" style="width: 30vw; height: auto;">
+                <img src="images/25A_MainFloorDiagram.jpg" alt="" style="width: 30vw; height: auto;">
+            </div>
+            <p>To validate our model predictions, both steady state and dynamic track tests are planned to be carried out, seeking a maximum 10% difference between real-world tests and simulation. Steady-state cornering by driving in a circle is achieved, and linear potentiometers, accelerometers, and IMUs on the car measure the lateral acceleration and downforce the car is producing; the same is done for straightline cases. Dynamic tests include running a sample autocross track using the same features in the competition track, and measuring laptimes and cornering acceleration with and without the aerodynamics package. </p>
+            <p>Testing is currently in progress- results coming soon!</p>
+            <img src="images/25A_Accel.jpg" style="width:30vw; height: auto;">
         </section>
         
     </body>
